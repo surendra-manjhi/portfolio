@@ -38,6 +38,7 @@ const projectData = [
 	{
 		img: "javascript",
 		name: "JavaScript",
+		code: "https://facebook.com",
 		live: "https://facebook.com",
 		desc: `
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore eaque odio temporibus veritatis repudiandae rem sit omnis, explicabo officiis est?
@@ -47,6 +48,7 @@ const projectData = [
 	{
 		img: "mongodb",
 		name: "MongoDB",
+		code: "https://facebook.com",
 		live: "https://google.com",
 		desc: `
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore eaque odio temporibus veritatis repudiandae rem sit omnis, explicabo officiis est?
@@ -56,6 +58,7 @@ const projectData = [
 	{
 		img: "react",
 		name: "React",
+		code: "https://facebook.com",
 		live: "https://instagram.com",
 		desc: `
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore eaque odio temporibus veritatis repudiandae rem sit omnis, explicabo officiis est?
@@ -87,7 +90,7 @@ projectData.forEach((project, index) => {
 					</div>
 
 					<div class="p-redirects">
-						<a href="${project.live}" target="_blank">
+						<a href="${project.code}" target="_blank">
 							<span class="material-symbols-outlined">
 								deployed_code
 							</span>
