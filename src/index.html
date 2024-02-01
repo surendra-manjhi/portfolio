@@ -23,19 +23,75 @@
 	</head>
 
 	<body class="w-screen h-screen bg-slate-900 text-white font-[Outfit]">
-		<header>
-			<!-- <div>manjhisurendra08@gmail.com</div> -->
+		<header class="m-4 flex flex-wrap justify-between static top-0">
+			<div class="flex items-center gap-2">
+				<span class="material-symbols-outlined"> mail </span>
+				manjhisurendra08@gmail.com
+			</div>
 
-			<!-- <nav>
-				<ul>
+			<div class="flex sm:hidden cursor-pointer">
+				<span class="material-symbols-outlined">menu</span>
+			</div>
+
+			<nav class="hidden sm:block">
+				<ul class="flex gap-4">
 					<li><a href="#home">home</a></li>
+					<li><a href="#stacks">stacks</a></li>
 					<li><a href="#projects">projects</a></li>
 				</ul>
-			</nav> -->
+			</nav>
 		</header>
 
 		<main>
-			<section id="home" class="m-4">
+			<section id="home" class="m-4 flex flex-col gap-2 items-center">
+				<div class="w-16">
+					<img
+						src="./assets/founder-img/avatar.jpg"
+						alt="founder"
+						class="rounded-full"
+					/>
+				</div>
+
+				<div class="intro text-center font-medium">
+					Hola, I'm Surendra 🐤
+				</div>
+
+				<div class="headline text-2xl text-center font-bold">
+					MERN Stack Developer
+				</div>
+
+				<div class="about text-center">
+					a
+					<span class="underline">Full-Stack Developer</span> with
+					<span class="underline">1 year</span> of experience in
+					Bharat. My focus is
+					<span class="underline">React (Next.js)</span>.
+				</div>
+
+				<div class="btn-ctn flex items-center gap-1">
+					<button
+						class="px-4 bg-gradient-to-r from-teal-100 to-pink-100 text-lg text-black rounded-full"
+					>
+						Resume
+					</button>
+
+					<a href="" target="_blank" class="w-6">
+						<img
+							src="./assets/web-icons/linkedin-logo.png"
+							alt="founder"
+						/>
+					</a>
+
+					<a href="" target="_blank" class="w-6">
+						<img
+							src="./assets/web-icons/github-logo.png"
+							alt="founder"
+						/>
+					</a>
+				</div>
+			</section>
+
+			<section id="stacks" class="m-4">
 				<div class="mb-2 text-2xl font-bold">Stacks</div>
 
 				<div
@@ -48,7 +104,7 @@
 				<div class="mb-2 text-2xl font-bold">Projects</div>
 
 				<div
-					id="projects-container"
+					id="project-card-container"
 					class="grid items-start gap-2 md:grid-cols-2 lg:grid-cols-3"
 				></div>
 			</section>
