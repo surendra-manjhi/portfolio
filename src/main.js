@@ -138,8 +138,10 @@ expandMore.forEach((expand) => {
 
 		if (isHidden) {
 			pDesc.classList.remove("hidden");
+			e.target.textContent = "expand_less";
 		} else {
 			pDesc.classList.add("hidden");
+			e.target.textContent = "expand_more";
 		}
 	});
 });
