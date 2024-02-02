@@ -36,7 +36,7 @@ const projectCardContainer = document.querySelector("#project-card-container");
 
 const projectData = [
 	{
-		img: "javascript",
+		img: "sticky-notes",
 		name: "Sticky Notes",
 		code: "https://github.com/surendra-manjhi/StickyNotes",
 		live: "https://surendra-manjhi.github.io/StickyNotes/",
@@ -46,7 +46,7 @@ const projectData = [
 		tags: ["html", "css", "javascript", "local-storage"],
 	},
 	{
-		img: "mongodb",
+		img: "countdown-timer",
 		name: "Countdown Timer",
 		code: "https://github.com/surendra-manjhi/CountDown-Timer",
 		live: "https://surendra-manjhi.github.io/CountDown-Timer/",
@@ -56,7 +56,7 @@ const projectData = [
 		tags: ["html", "css", "javascript"],
 	},
 	{
-		img: "react",
+		img: "dogpedia",
 		name: "Dogpedia",
 		code: "https://github.com/surendra-manjhi/Dogpedia",
 		live: "https://dogpedia-bay.vercel.app/",
@@ -74,7 +74,7 @@ projectData.forEach((project, index) => {
 				class="p-img-wrapper aspect-4/3 overflow-hidden"
 			>
 				<img
-					src="./assets/tech-icons/${project.img}.png"
+					src="./assets/project-img/${project.img}.jpeg"
 					alt="${project.name}"
 					class="w-full"
 				/>
