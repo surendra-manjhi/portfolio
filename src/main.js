@@ -89,13 +89,13 @@ projectData.forEach((project, index) => {
 						</span>
 					</div>
 
-					<div class="p-redirects flex">
-						<a href="${project.code}" target="_blank">
+					<div class="p-redirects flex items-end">
+						<a href="${project.code}" target="_blank" class="w-[24px] h-[24px]">
 							<span class="material-symbols-outlined">
 								deployed_code
 							</span>
 						</a>
-						<a href="${project.live}" target="_blank">
+						<a href="${project.live}" target="_blank" class="w-[24px] h-[24px]">
 							<span class="material-symbols-outlined">
 								open_in_new
 							</span>
