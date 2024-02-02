@@ -19,7 +19,7 @@ const techIcons = [
 
 techIcons.forEach((icon) => {
 	let imgCtn = document.createElement("div");
-	imgCtn.className = "w-12";
+	imgCtn.className = "w-12 sm:w-14";
 
 	let img = document.createElement("img");
 	img.src = `./assets/tech-icons/${icon}.png`;
@@ -82,7 +82,7 @@ projectData.forEach((project, index) => {
 
 			<div class="p-content p-2">
 				<div class="flex justify-between">
-					<div class="p-name flex items-end text-xl font-medium">
+					<div class="p-name flex items-end text-xl sm:text-2xl font-medium">
 						${project.name}
 						<span class="expand cursor-pointer material-symbols-outlined">
 							expand_more
@@ -103,11 +103,11 @@ projectData.forEach((project, index) => {
 					</div>
 				</div>
 
-				<p class="p-desc hidden text-slate-400 font-thin">
+				<p class="p-desc sm:text-lg hidden text-slate-400 font-thin">
 					${project.desc}
 				</p>
 
-				<ul class="p-tags mt-1 flex flex-wrap gap-2"></ul>
+				<ul class="p-tags mt-1 sm:text-lg flex flex-wrap gap-2"></ul>
 			</div>
 		</div>
 	`;

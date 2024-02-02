@@ -22,9 +22,13 @@
 		<script src="main.js" defer></script>
 	</head>
 
-	<body class="w-screen h-screen bg-slate-900 text-white font-[Outfit]">
-		<header class="m-4 text-lg flex flex-wrap items-center justify-between">
-			<div class="flex items-center">
+	<body
+		class="p-4 sm:px-20 sm:py-8 w-screen h-screen bg-slate-900 text-white font-[Outfit]"
+	>
+		<header
+			class="text-lg sm:text-xl flex flex-wrap items-center justify-between"
+		>
+			<div class="flex items-center flex-wrap break-words">
 				<span class="material-symbols-outlined">
 					mark_email_unread
 				</span>
@@ -38,7 +42,7 @@
 					>
 				</div>
 
-				<nav class="navbar w-24 hidden absolute right-0">
+				<nav class="navbar w-24 hidden rounded absolute right-0">
 					<ul class="flex flex-col bg-slate-800 rounded">
 						<li class="px-2 py-1"><a href="#home">home</a></li>
 						<li class="px-2 py-1"><a href="#stacks">stacks</a></li>
@@ -63,14 +67,14 @@
 		<main>
 			<section
 				id="home"
-				class="m-4 mt-12 flex flex-col gap-3 items-center"
+				class="mt-14 mb-4 sm:mb-8 flex flex-col gap-3 items-center"
 			>
 				<!-- <div class="border-2 rounded overflow-hidden">
 					<img src="./assets/banner/github-streak.png" alt="banner" />
 				</div> -->
 
 				<div
-					class="p-[3px] w-20 aspect-square bg-gradient-to-br from-green-200 to-teal-700 rounded-full"
+					class="p-[3px] w-20 sm:w-24 aspect-square bg-gradient-to-br from-green-200 to-teal-700 rounded-full"
 				>
 					<img
 						src="./assets/founder-img/avatar.jpg"
@@ -79,40 +83,37 @@
 					/>
 				</div>
 
-				<div class="intro text-xl text-center font-medium">
+				<div class="intro text-xl sm:text-2xl text-center font-medium">
 					Hola, I'm Surendra 🍈
 				</div>
 
-				<div class="headline text-3xl text-center font-bold">
+				<div
+					class="headline text-3xl sm:text-4xl text-center font-bold"
+				>
 					MERN Stack Developer
 				</div>
 
-				<div class="about text-center text-lg font-thin text-slate-400">
+				<div
+					class="about text-center text-lg sm:text-xl font-thin text-slate-400"
+				>
 					a
-					<span class="text-slate-300 font-normal underline"
-						>full-stack developer</span
+					<span class="text-slate-300 font-normal"
+						>Full-Stack Developer</span
 					>
 					with
-					<span class="text-slate-300 font-normal underline"
-						>1 year</span
-					>
+					<span class="text-slate-300 font-normal">1 year</span>
 					of experience in
-					<span class="text-slate-300 font-normal underline"
-						>Bharat</span
-					>. I enjoy building
-					<span class="text-slate-300 font-normal underline"
-						>websites & apps</span
-					>. My focus is in
-					<span class="text-slate-300 font-normal underline"
-						>backend</span
-					>. Currently I'm learning
-					<span class="text-slate-300 font-normal underline">C++</span
-					>.
+					<span class="text-slate-300 font-normal">Bharat</span>.
+					<br class="hidden sm:block" />I enjoy building
+					<span class="text-slate-300 font-normal"
+						>websites & digital products</span
+					>. <br class="hidden sm:block" />My focus is in
+					<span class="text-slate-300 font-normal">Backend</span>.
 				</div>
 
-				<div class="btn-ctn flex items-center gap-2">
+				<div class="btn-ctn mt-2 flex items-center gap-2">
 					<button
-						class="px-5 py-1 flex items-center bg-gradient-to-b from-lime-100 to-lime-200 text-xl text-black rounded-full"
+						class="px-5 sm:px-6 py-1 flex items-center bg-gradient-to-b from-lime-100 to-lime-200 text-xl sm:text-2xl text-black rounded-full"
 					>
 						Resume
 						<span class="material-symbols-outlined">
@@ -123,7 +124,7 @@
 					<a
 						href="https://linkedin.com/in/surendra-manjhi"
 						target="_blank"
-						class="w-7"
+						class="w-7 sm:w-8"
 					>
 						<img
 							src="./assets/web-icons/linkedin-logo.png"
@@ -134,7 +135,7 @@
 					<a
 						href="https://github.com/surendra-manjhi"
 						target="_blank"
-						class="w-7"
+						class="w-7 sm:w-8"
 					>
 						<img
 							src="./assets/web-icons/github-logo.png"
@@ -145,7 +146,7 @@
 					<a
 						href="https://twitter.com/manjhss"
 						target="_blank"
-						class="w-7"
+						class="w-7 sm:w-8"
 					>
 						<img
 							src="./assets/web-icons/twitter-logo.png"
@@ -155,8 +156,10 @@
 				</div>
 			</section>
 
-			<section id="stacks" class="m-4">
-				<div class="mb-2 text-2xl font-bold">Stacks</div>
+			<section id="stacks" class="mb-4 sm:mb-8">
+				<div class="mb-2 sm:mb-4 text-2xl sm:text-3xl font-bold">
+					Stacks
+				</div>
 
 				<div
 					id="tech-icons-container"
@@ -164,8 +167,10 @@
 				></div>
 			</section>
 
-			<section id="projects" class="m-4">
-				<div class="mb-2 text-2xl font-bold">Projects</div>
+			<section id="projects" class="mb-4 sm:mb-8">
+				<div class="mb-2 sm:mb-4 text-2xl sm:text-3xl font-bold">
+					Projects
+				</div>
 
 				<div
 					id="project-card-container"
@@ -174,7 +179,7 @@
 			</section>
 		</main>
 
-		<footer class="m-4 text-slate-400 text-center">
+		<footer class="mb-4 sm:mb-8 sm:text-lg text-slate-400 text-center">
 			Made with 🍈 by Surendra
 		</footer>
 	</body>
