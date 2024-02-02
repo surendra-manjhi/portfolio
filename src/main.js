@@ -82,14 +82,14 @@ projectData.forEach((project, index) => {
 
 			<div class="p-content p-2">
 				<div class="flex justify-between">
-					<div class="p-name flex items-end text-xl sm:text-2xl font-medium">
+					<div class="p-name flex flex-wrap items-end text-xl sm:text-2xl font-medium">
 						${project.name}
 						<span class="expand cursor-pointer material-symbols-outlined">
 							expand_more
 						</span>
 					</div>
 
-					<div class="p-redirects">
+					<div class="p-redirects flex">
 						<a href="${project.code}" target="_blank">
 							<span class="material-symbols-outlined">
 								deployed_code
