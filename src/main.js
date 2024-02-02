@@ -69,7 +69,7 @@ const projectData = [
 
 projectData.forEach((project, index) => {
 	projectCardContainer.innerHTML += `
-		<div id="p-${index}" class="border-2 rounded overflow-hidden">
+		<div id="p-${index}" class="border-2 border-white bg-slate-800 rounded overflow-hidden">
 			<div
 				class="p-img-wrapper aspect-4/3 overflow-hidden"
 			>
