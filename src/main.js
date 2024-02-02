@@ -37,33 +37,33 @@ const projectCardContainer = document.querySelector("#project-card-container");
 const projectData = [
 	{
 		img: "javascript",
-		name: "JavaScript",
-		code: "https://facebook.com",
-		live: "https://facebook.com",
+		name: "Sticky Notes",
+		code: "https://github.com/surendra-manjhi/StickyNotes",
+		live: "https://surendra-manjhi.github.io/StickyNotes/",
 		desc: `
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore eaque odio temporibus veritatis repudiandae rem sit omnis, explicabo officiis est?
+				With Sticky Notes, you can perform CRUD operations like Create, Read, Update, Delete Notes, Search Notes and Save Notes Data in browser's local storage.
 			`,
-		tags: ["html", "css"],
+		tags: ["html", "css", "javascript", "local-storage"],
 	},
 	{
 		img: "mongodb",
-		name: "MongoDB",
-		code: "https://facebook.com",
-		live: "https://google.com",
+		name: "Countdown Timer",
+		code: "https://github.com/surendra-manjhi/CountDown-Timer",
+		live: "https://surendra-manjhi.github.io/CountDown-Timer/",
 		desc: `
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore eaque odio temporibus veritatis repudiandae rem sit omnis, explicabo officiis est?
+				CountDown Timer counts down from a certain number (minutes or seconds) to indicate the beginning or end of an event or offer.
 			`,
-		tags: ["mongodb", "node"],
+		tags: ["html", "css", "javascript"],
 	},
 	{
 		img: "react",
-		name: "React",
-		code: "https://facebook.com",
-		live: "https://instagram.com",
+		name: "Dogpedia",
+		code: "https://github.com/surendra-manjhi/Dogpedia",
+		live: "https://dogpedia-bay.vercel.app/",
 		desc: `
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore eaque odio temporibus veritatis repudiandae rem sit omnis, explicabo officiis est?
+				Dogpedia is a platform where numerous varieties of dog's infomation are displayed and also can be filtered.
 			`,
-		tags: ["react", "tailwind"],
+		tags: ["react", "APIs"],
 	},
 ];
 
@@ -107,7 +107,7 @@ projectData.forEach((project, index) => {
 					${project.desc}
 				</p>
 
-				<ul class="p-tags mt-1 flex gap-2"></ul>
+				<ul class="p-tags mt-1 flex flex-wrap gap-2"></ul>
 			</div>
 		</div>
 	`;
