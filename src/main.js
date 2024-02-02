@@ -153,7 +153,7 @@ const hamburgerMenuBtn = document.querySelector(
 );
 const navbar = document.querySelector(".hamburger-menu-wrapper .navbar");
 
-hamburgerMenuBtn.addEventListener("click", function (e) {
+hamburgerMenuBtn.addEventListener("click", function () {
 	let isHidden = navbar.classList.contains("hidden");
 
 	if (isHidden) {
