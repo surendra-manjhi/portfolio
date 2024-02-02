@@ -103,7 +103,7 @@ projectData.forEach((project, index) => {
 					</div>
 				</div>
 
-				<p class="p-desc hidden text-gray-400 font-thin">
+				<p class="p-desc hidden text-slate-400 font-thin">
 					${project.desc}
 				</p>
 
@@ -164,5 +164,3 @@ hamburgerMenuBtn.addEventListener("click", function (e) {
 		hamburgerMenuBtn.textContent = "menu";
 	}
 });
-
-console.log(navbar);
