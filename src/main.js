@@ -145,3 +145,24 @@ expandMore.forEach((expand) => {
 		}
 	});
 });
+
+// TOGGLE HAMBURGER MENU
+
+const hamburgerMenuBtn = document.querySelector(
+	".hamburger-menu-wrapper #menu"
+);
+const navbar = document.querySelector(".hamburger-menu-wrapper .navbar");
+
+hamburgerMenuBtn.addEventListener("click", function (e) {
+	let isHidden = navbar.classList.contains("hidden");
+
+	if (isHidden) {
+		navbar.classList.remove("hidden");
+		hamburgerMenuBtn.textContent = "close";
+	} else {
+		navbar.classList.add("hidden");
+		hamburgerMenuBtn.textContent = "menu";
+	}
+});
+
+console.log(navbar);

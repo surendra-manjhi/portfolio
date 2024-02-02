@@ -23,7 +23,7 @@
 	</head>
 
 	<body class="w-screen h-screen bg-slate-900 text-white font-[Outfit]">
-		<header class="m-4 text-xl flex flex-wrap items-center justify-between">
+		<header class="m-4 text-lg flex flex-wrap items-center justify-between">
 			<div class="flex items-center">
 				<span class="material-symbols-outlined">
 					mark_email_unread
@@ -31,21 +31,42 @@
 				manjhisurendra08@gmail.com
 			</div>
 
-			<div class="flex sm:hidden cursor-pointer">
-				<span class="material-symbols-outlined">menu</span>
+			<div class="hamburger-menu-wrapper relative sm:hidden">
+				<div class="flex cursor-pointer">
+					<span id="menu" class="material-symbols-outlined"
+						>menu</span
+					>
+				</div>
+
+				<nav class="navbar hidden">
+					<ul
+						class="flex flex-col bg-slate-800 absolute right-0 rounded w-24"
+					>
+						<li class="px-2 py-1"><a href="#home">home</a></li>
+						<li class="px-2 py-1"><a href="#stacks">stacks</a></li>
+						<li class="px-2 py-1">
+							<a href="#projects">projects</a>
+						</li>
+					</ul>
+				</nav>
 			</div>
 
 			<nav class="hidden sm:block">
 				<ul class="flex gap-4">
-					<li><a href="#home">home</a></li>
-					<li><a href="#stacks">stacks</a></li>
-					<li><a href="#projects">projects</a></li>
+					<li class=""><a href="#home">home</a></li>
+					<li class=""><a href="#stacks">stacks</a></li>
+					<li class="">
+						<a href="#projects">projects</a>
+					</li>
 				</ul>
 			</nav>
 		</header>
 
 		<main>
-			<section id="home" class="m-4 flex flex-col gap-3 items-center">
+			<section
+				id="home"
+				class="m-4 mt-12 flex flex-col gap-3 items-center"
+			>
 				<!-- <div class="border-2 rounded overflow-hidden">
 					<img src="./assets/banner/github-streak.png" alt="banner" />
 				</div> -->
@@ -154,5 +175,9 @@
 				></div>
 			</section>
 		</main>
+
+		<footer class="m-4 text-slate-400 text-center">
+			Made with 🍈 by Surendra
+		</footer>
 	</body>
 </html>
