@@ -107,7 +107,7 @@ projectData.forEach((project, index) => {
 					${project.desc}
 				</p>
 
-				<ul class="p-tags mt-1 sm:text-lg flex flex-wrap gap-2"></ul>
+				<ul class="p-tags mt-1 sm:text-lg flex flex-wrap gap-1"></ul>
 			</div>
 		</div>
 	`;
