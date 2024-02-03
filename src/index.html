@@ -23,9 +23,11 @@
 	</head>
 
 	<body
-		class="p-4 sm:px-20 sm:py-8 w-screen h-screen bg-slate-900 text-white font-[Outfit]"
+		class="px-4 sm:px-20 w-screen h-screen bg-slate-900 text-white font-[Outfit]"
 	>
-		<header class="sm:text-xl flex flex-wrap items-center justify-between">
+		<header
+			class="py-4 sm:py-6 bg-slate-900 sm:text-xl flex flex-wrap items-center justify-between sticky top-0 sm:static"
+		>
 			<div class="sm:mr-20 flex gap-1 items-center flex-wrap break-words">
 				<span class="material-symbols-outlined">
 					mark_email_unread
@@ -42,7 +44,9 @@
 
 				<nav class="navbar w-24 hidden rounded absolute right-0">
 					<ul class="flex flex-col bg-slate-800 rounded">
-						<li class="px-2 py-1"><a href="#home">home</a></li>
+						<li class="px-2 py-1 underline">
+							<a href="#home">home</a>
+						</li>
 						<li class="px-2 py-1"><a href="#stacks">stacks</a></li>
 						<li class="px-2 py-1">
 							<a href="#projects">projects</a>
@@ -51,9 +55,9 @@
 				</nav>
 			</div>
 
-			<nav class="hidden sm:block">
-				<ul class="flex gap-4">
-					<li class=""><a href="#home">home</a></li>
+			<nav class="navbar hidden sm:block">
+				<ul class="flex gap-6">
+					<li class="underline"><a href="#home">home</a></li>
 					<li class=""><a href="#stacks">stacks</a></li>
 					<li class="">
 						<a href="#projects">projects</a>
@@ -61,18 +65,18 @@
 				</ul>
 			</nav>
 		</header>
-
 		<main>
+			<!--  -->
 			<section
 				id="home"
-				class="mt-14 sm:mt-28 mb-4 sm:mb-8 flex flex-col gap-2 sm:gap-3 items-center"
+				class="pt-14 sm:pt-28 pb-4 sm:pb-8 flex flex-col gap-2 sm:gap-3 items-center"
 			>
-				<!-- <div class="border-2 rounded overflow-hidden">
-					<img src="./assets/banner/github-streak.png" alt="banner" />
+				<!-- <div class="rounded overflow-hidden">
+					<img src="./assets/banner/github-streak.png" alt="banner" class="w-fit h-fit" />
 				</div> -->
 
 				<div
-					class="p-[3px] w-20 sm:w-24 aspect-square bg-gradient-to-br from-green-200 to-teal-700 rounded-full"
+					class="p-[3px] aspect-4/3 w-20 sm:w-24 bg-gradient-to-br from-green-200 to-teal-700 rounded-full"
 				>
 					<img
 						src="./assets/founder-img/avatar.jpg"
@@ -159,7 +163,7 @@
 				</div>
 			</section>
 
-			<section id="stacks" class="mb-4 sm:mb-8">
+			<section id="stacks" class="py-4 sm:py-8">
 				<div class="mb-4 sm:mb-6 text-2xl sm:text-3xl font-bold">
 					Stacks
 				</div>
@@ -170,7 +174,7 @@
 				></div>
 			</section>
 
-			<section id="projects" class="mb-4 sm:mb-8">
+			<section id="projects" class="py-4 sm:py-8">
 				<div class="mb-4 sm:mb-6 text-2xl sm:text-3xl font-bold">
 					Projects
 				</div>
@@ -183,7 +187,7 @@
 		</main>
 
 		<footer
-			class="mb-4 sm:mb-8 sm:text-xl text-slate-400 text-center font-thin"
+			class="py-4 sm:py-8 sm:text-xl text-slate-400 text-center font-thin"
 		>
 			Made with 🍈 by Surendra
 		</footer>

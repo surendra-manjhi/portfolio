@@ -164,3 +164,22 @@ hamburgerMenuBtn.addEventListener("click", function () {
 		hamburgerMenuBtn.textContent = "menu";
 	}
 });
+
+// NAVIGATE NAV LINKS
+
+let navLinks = Array.from(document.querySelectorAll(".navbar ul li"));
+
+function resetActiveClass() {
+	navLinks.forEach((link) => {
+		link.classList.remove("underline");
+	});
+}
+
+navLinks.forEach((link) => {
+	link.addEventListener("click", () => {
+		resetActiveClass();
+		link.classList.add("underline");
+	});
+});
+
+console.log(navLinks);
