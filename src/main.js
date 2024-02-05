@@ -69,7 +69,7 @@ const projectData = [
 
 projectData.forEach((project, index) => {
 	projectCardContainer.innerHTML += `
-		<div id="p-${index}" class="border-2 border-white bg-slate-800 rounded overflow-hidden">
+		<div id="p-${index}" class="border-2 border-slate-300 bg-slate-800 rounded overflow-hidden">
 			<div
 				class="p-img-wrapper aspect-4/3 overflow-hidden"
 			>
@@ -151,6 +151,7 @@ expandMore.forEach((expand) => {
 const hamburgerMenuBtn = document.querySelector(
 	".hamburger-menu-wrapper #menu"
 );
+
 const navbar = document.querySelector(".hamburger-menu-wrapper .navbar");
 
 hamburgerMenuBtn.addEventListener("click", function () {
@@ -181,5 +182,3 @@ navLinks.forEach((link) => {
 		link.classList.add("underline");
 	});
 });
-
-console.log(navLinks);

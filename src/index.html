@@ -23,12 +23,12 @@
 	</head>
 
 	<body
-		class="px-4 sm:px-20 w-screen h-screen bg-slate-900 text-white font-[Outfit]"
+		class="px-4 sm:px-8 lg:px-36 w-screen h-screen bg-slate-900 text-white font-[Outfit]"
 	>
 		<header
 			class="py-4 sm:py-6 bg-slate-900 sm:text-xl flex flex-wrap items-center justify-between sticky top-0 sm:static"
 		>
-			<div class="sm:mr-20 flex gap-1 items-center flex-wrap break-words">
+			<div class="flex gap-1 items-center flex-wrap break-words">
 				<span class="material-symbols-outlined">
 					mark_email_unread
 				</span>
@@ -66,14 +66,30 @@
 			</nav>
 		</header>
 		<main>
-			<!--  -->
 			<section
 				id="home"
-				class="pt-14 sm:pt-28 pb-4 sm:pb-8 flex flex-col gap-2 sm:gap-3 items-center"
+				class="pb-4 sm:pb-8 flex flex-col gap-2 sm:gap-3 items-center"
 			>
-				<!-- <div class="rounded overflow-hidden">
-					<img src="./assets/banner/github-streak.png" alt="banner" class="w-fit h-fit" />
-				</div> -->
+				<div
+					class="banenr-wrapper mb-4 sm:mb-8 w-full flex flex-col gap-2 sm:gap-4 items-center"
+				>
+					<div
+						class="h-24 sm:h-48 w-full bg-[url('./assets/banner/github-streak.png')] bg-center bg-cover bg-no-repeat border-2 rounded border-slate-300"
+					></div>
+
+					<ul class="flex gap-1 sm:gap-2">
+						<li class="w-1 h-1 bg-white rounded-full"></li>
+						<li class="w-1 h-1 bg-white rounded-full"></li>
+						<li class="w-1 h-1 bg-white rounded-full"></li>
+						<li class="w-1 h-1 bg-white rounded-full"></li>
+					</ul>
+
+					<!-- <span
+						class="material-symbols-outlined bg-slate-800 rounded"
+					>
+						navigate_next
+					</span> -->
+				</div>
 
 				<div
 					class="p-[3px] aspect-4/3 w-20 sm:w-24 bg-gradient-to-br from-green-200 to-teal-700 rounded-full"
@@ -167,6 +183,29 @@
 				<div class="mb-4 sm:mb-6 text-2xl sm:text-3xl font-bold">
 					Stacks
 				</div>
+
+				<!-- <ul class="flex gap-1">
+					<li
+						class="rounded-full border-2 px-2 bg-slate-400 border-slate-400 text-slate-900"
+					>
+						All
+					</li>
+					<li
+						class="rounded-full border-2 px-2 bg-transparent border-slate-400 text-slate-400"
+					>
+						Frontend
+					</li>
+					<li
+						class="rounded-full border-2 px-2 bg-transparent border-slate-400 text-slate-400"
+					>
+						Backend
+					</li>
+					<li
+						class="rounded-full border-2 px-2 bg-transparent border-slate-400 text-slate-400"
+					>
+						Database
+					</li>
+				</ul> -->
 
 				<div
 					id="tech-icons-container"
