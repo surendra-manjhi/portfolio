@@ -182,3 +182,53 @@ navLinks.forEach((link) => {
 		link.classList.add("underline");
 	});
 });
+
+// BANNER
+
+const bannerData = [
+	"./assets/banner/github-streak.png",
+	"./assets/banner/hackerrank-badges.png",
+];
+
+const banner = document.querySelector(".banner-wrapper img");
+const bannerNavigateCtn = document.querySelector(".banner-wrapper ul");
+
+bannerIndex = 0;
+banner.src = `${bannerData[bannerIndex]}`;
+
+setInterval(() => {
+	bannerIndex++;
+
+	if (bannerIndex == bannerData.length) {
+		bannerIndex = 0;
+	}
+
+	banner.src = `${bannerData[bannerIndex]}`;
+}, 4000);
+
+bannerData.forEach((dot, index) => {
+	bannerNavigateCtn.innerHTML += `
+		<li
+			id="${index}"
+			class="w-1 h-1 sm:w-2 sm:h-2 bg-white rounded-full cursor-pointer"
+		></li>
+	`;
+});
+
+// SONG
+
+const musicBtn = document.querySelector("#music");
+
+let song = new Audio("./assets/music/song.mp3");
+
+let isPlaying = false;
+
+musicBtn.addEventListener("click", function () {
+	if (isPlaying) {
+		song.pause();
+		isPlaying = false;
+	} else {
+		song.play();
+		isPlaying = true;
+	}
+});
