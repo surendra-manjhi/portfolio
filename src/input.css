@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+	.active {
+		@apply underline;
+	}
+
+	.highlight {
+		@apply font-normal underline text-slate-300;
+	}
+
+	.avatar {
+		@apply p-[3px] aspect-4/3 w-20 sm:w-24 bg-gradient-to-br from-green-200 to-teal-600 rounded-full;
+	}
+
+	.project-card {
+		@apply border-2 border-slate-300 rounded overflow-hidden;
+	}
+
+	.resume-btn {
+		@apply px-5 sm:px-6 py-1 flex items-center bg-gradient-to-b from-lime-100 to-lime-200 text-lg sm:text-2xl text-slate-900 rounded-full;
+	}
+}

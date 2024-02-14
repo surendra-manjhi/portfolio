@@ -23,15 +23,8 @@
 	</head>
 
 	<body
-		class="px-4 sm:px-8 lg:px-36 w-screen h-screen bg-slate-900 text-white font-[Outfit] relative"
+		class="px-4 sm:px-8 lg:px-36 w-screen h-full bg-slate-900 text-slate-300 font-[Outfit] relative"
 	>
-		<!-- <div
-			id="music"
-			class="material-symbols-outlined bg-slate-800/40 rounded-full shadow-sm shadow-slate-300 backdrop-blur-lg fixed bottom-4 right-4 lg:bottom-8 lg:right-36 p-2 cursor-pointer"
-		>
-			music_note
-		</div> -->
-
 		<header
 			class="py-4 sm:py-6 bg-slate-900 sm:text-xl flex flex-wrap items-center justify-between sticky top-0 sm:static"
 		>
@@ -51,7 +44,7 @@
 
 				<nav class="navbar w-24 hidden rounded absolute right-0">
 					<ul class="flex flex-col bg-slate-800 rounded">
-						<li class="px-2 py-1 underline">
+						<li class="px-2 py-1 active">
 							<a href="#home">home</a>
 						</li>
 						<li class="px-2 py-1"><a href="#stacks">stacks</a></li>
@@ -64,7 +57,7 @@
 
 			<nav class="navbar hidden sm:block">
 				<ul class="flex gap-6">
-					<li class="underline"><a href="#home">home</a></li>
+					<li class="active"><a href="#home">home</a></li>
 					<li class=""><a href="#stacks">stacks</a></li>
 					<li class="">
 						<a href="#projects">projects</a>
@@ -89,9 +82,7 @@
 					<ul class="flex gap-1 sm:gap-2"></ul>
 				</div>
 
-				<div
-					class="p-[3px] aspect-4/3 w-20 sm:w-24 bg-gradient-to-br from-green-200 to-teal-700 rounded-full"
-				>
+				<div class="avatar">
 					<img
 						src="./assets/founder-img/avatar.jpg"
 						alt="founder"
@@ -110,32 +101,22 @@
 				</div>
 
 				<div
-					class="about text-center sm:text-xl font-thin text-slate-400"
+					class="about text-slate-400 text-center sm:text-xl font-thin"
 				>
 					a
-					<span class="text-slate-300 font-normal underline"
-						>Full-Stack Developer</span
-					>
+					<span class="highlight">Full-Stack Developer</span>
 					with
-					<span class="text-slate-300 font-normal underline"
-						>1 year</span
-					>
+					<span class="highlight">1 year</span>
 					of experience in
-					<span class="text-slate-300 font-normal underline"
-						>Bharat</span
-					>. <br class="hidden sm:block" />I enjoy building
-					<span class="text-slate-300 font-normal underline"
-						>websites & digital products</span
-					>. <br class="hidden sm:block" />My focus is
-					<span class="text-slate-300 font-normal underline"
-						>Backend(Nodejs)</span
-					>.
+					<span class="highlight">Bharat</span>.
+					<br class="hidden sm:block" />I enjoy building
+					<span class="highlight">websites & digital products</span>.
+					<br class="hidden sm:block" />My focus is
+					<span class="highlight">Backend(Nodejs)</span>.
 				</div>
 
 				<div class="btn-ctn mt-2 flex flex-wrap items-center gap-2">
-					<button
-						class="px-5 sm:px-6 py-1 flex items-center bg-gradient-to-b from-lime-100 to-lime-200 text-lg sm:text-2xl text-black rounded-full"
-					>
+					<button class="resume-btn">
 						Resume
 						<span class="material-symbols-outlined">
 							download
@@ -200,9 +181,7 @@
 			</section>
 		</main>
 
-		<footer
-			class="py-4 sm:py-8 sm:text-xl text-slate-400 text-center font-thin"
-		>
+		<footer class="pb-4 sm:pb-8 sm:text-xl text-center font-thin">
 			Made with 🍈 by Surendra
 		</footer>
 	</body>

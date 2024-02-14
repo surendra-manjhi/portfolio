@@ -65,18 +65,38 @@ const projectData = [
 			`,
 		tags: ["react", "APIs"],
 	},
+	{
+		img: "portfolio",
+		name: "Portfolio",
+		code: "https://github.com/surendra-manjhi/portfolio",
+		live: "https://portfolio.manjhss.tech",
+		desc: `
+				Dogpedia is a platform where numerous varieties of dog's infomation are displayed and also can be filtered.
+			`,
+		tags: ["html", "tailwind-css"],
+	},
+	{
+		img: "rps",
+		name: "Rock, Paper & Scissor",
+		code: "",
+		live: "",
+		desc: `
+				Rock paper scissors is an intransitive hand game, usually played between two or more people where player forms one of three shapes.
+			`,
+		tags: ["html", "css", "javascript"],
+	},
 ];
 
 projectData.forEach((project, index) => {
 	projectCardContainer.innerHTML += `
-		<div id="p-${index}" class="border-2 border-slate-300 bg-slate-800 rounded overflow-hidden">
+		<div id="p-${index}" class="project-card">
 			<div
 				class="p-img-wrapper aspect-4/3 overflow-hidden"
 			>
 				<img
 					src="./assets/project-img/${project.img}.jpeg"
 					alt="${project.name}"
-					class="w-full"
+					class="w-full object-cover"
 				/>
 			</div>
 
@@ -103,7 +123,7 @@ projectData.forEach((project, index) => {
 					</div>
 				</div>
 
-				<p class="p-desc sm:text-lg hidden text-slate-400 font-thin">
+				<p class="p-desc hidden sm:text-lg font-thin text-slate-400">
 					${project.desc}
 				</p>
 
@@ -118,7 +138,7 @@ projectData.forEach((project, index) => {
 
 	project.tags.forEach((tag) => {
 		tagCtn.innerHTML += `
-			<li class="px-2 bg-white text-black rounded">
+			<li class="px-2 bg-slate-300 text-slate-900 rounded">
 				${tag}
 			</li>
 		`;
@@ -172,14 +192,14 @@ let navLinks = Array.from(document.querySelectorAll(".navbar ul li"));
 
 function resetActiveClass() {
 	navLinks.forEach((link) => {
-		link.classList.remove("underline");
+		link.classList.remove("active");
 	});
 }
 
 navLinks.forEach((link) => {
 	link.addEventListener("click", () => {
 		resetActiveClass();
-		link.classList.add("underline");
+		link.classList.add("active");
 	});
 });
 
@@ -196,39 +216,21 @@ const bannerNavigateCtn = document.querySelector(".banner-wrapper ul");
 bannerIndex = 0;
 banner.src = `${bannerData[bannerIndex]}`;
 
-setInterval(() => {
-	bannerIndex++;
+// setInterval(() => {
+// 	bannerIndex++;
 
-	if (bannerIndex == bannerData.length) {
-		bannerIndex = 0;
-	}
+// 	if (bannerIndex == bannerData.length) {
+// 		bannerIndex = 0;
+// 	}
 
-	banner.src = `${bannerData[bannerIndex]}`;
-}, 4000);
+// 	banner.src = `${bannerData[bannerIndex]}`;
+// }, 4000);
 
-bannerData.forEach((dot, index) => {
-	bannerNavigateCtn.innerHTML += `
-		<li
-			id="${index}"
-			class="w-1 h-1 sm:w-2 sm:h-2 bg-white rounded-full cursor-pointer"
-		></li>
-	`;
-});
-
-// SONG
-
-const musicBtn = document.querySelector("#music");
-
-let song = new Audio("./assets/music/song.mp3");
-
-let isPlaying = false;
-
-musicBtn.addEventListener("click", function () {
-	if (isPlaying) {
-		song.pause();
-		isPlaying = false;
-	} else {
-		song.play();
-		isPlaying = true;
-	}
-});
+// bannerData.forEach((dot, index) => {
+// 	bannerNavigateCtn.innerHTML += `
+// 		<li
+// 			id="${index}"
+// 			class="w-1 h-1 sm:w-2 sm:h-2 bg-slate-300 rounded-full cursor-pointer"
+// 		></li>
+// 	`;
+// });
