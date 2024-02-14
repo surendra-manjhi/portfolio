@@ -71,7 +71,7 @@ const projectData = [
 		code: "https://github.com/surendra-manjhi/portfolio",
 		live: "https://portfolio.manjhss.tech",
 		desc: `
-				Dogpedia is a platform where numerous varieties of dog's infomation are displayed and also can be filtered.
+				This is my portfolio website which represent me such as about me, technology I use, projects and experience.		
 			`,
 		tags: ["html", "tailwind-css"],
 	},
@@ -226,11 +226,11 @@ banner.src = `${bannerData[bannerIndex]}`;
 // 	banner.src = `${bannerData[bannerIndex]}`;
 // }, 4000);
 
-// bannerData.forEach((dot, index) => {
-// 	bannerNavigateCtn.innerHTML += `
-// 		<li
-// 			id="${index}"
-// 			class="w-1 h-1 sm:w-2 sm:h-2 bg-slate-300 rounded-full cursor-pointer"
-// 		></li>
-// 	`;
-// });
+bannerData.forEach((dot, index) => {
+	bannerNavigateCtn.innerHTML += `
+		<li
+			id="${index}"
+			class="w-1 h-1 sm:w-2 sm:h-2 bg-slate-300 rounded-full cursor-pointer"
+		></li>
+	`;
+});
