@@ -78,8 +78,8 @@ const projectData = [
 	{
 		img: "rps",
 		name: "Rock, Paper & Scissor",
-		code: "",
-		live: "",
+		code: "https://github.com/surendra-manjhi/rock-paper-scissor",
+		live: "https://surendra-manjhi.github.io/rock-paper-scissor/",
 		desc: `
 				Rock paper scissors is an intransitive hand game, usually played between two or more people where player forms one of three shapes.
 			`,
@@ -90,6 +90,12 @@ const projectData = [
 projectData.forEach((project, index) => {
 	projectCardContainer.innerHTML += `
 		<div id="p-${index}" class="project-card">
+			<div
+				class="bg-yellow-300 m-2 absolute text-black px-2 rounded-full"
+			>
+				New
+			</div>
+			
 			<div
 				class="p-img-wrapper aspect-4/3 overflow-hidden"
 			>
