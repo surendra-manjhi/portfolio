@@ -546,6 +546,7 @@ video {
 
 .active {
   text-decoration-line: underline;
+  text-decoration-color: #fde047;
 }
 
 .highlight {
@@ -629,26 +630,6 @@ video {
   top: 0px;
 }
 
-.top-2 {
-  top: 0.5rem;
-}
-
-.top-6 {
-  top: 1.5rem;
-}
-
-.top-8 {
-  top: 2rem;
-}
-
-.top-7 {
-  top: 1.75rem;
-}
-
-.top-9 {
-  top: 2.25rem;
-}
-
 .top-10 {
   top: 2.5rem;
 }
@@ -675,10 +656,6 @@ video {
 
 .mt-2 {
   margin-top: 0.5rem;
-}
-
-.inline-block {
-  display: inline-block;
 }
 
 .flex {
@@ -824,101 +801,19 @@ video {
   background-color: rgb(4 13 18 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#202426\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(32 36 38 / var(--tw-bg-opacity));
+}
+
 .bg-slate-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(203 213 225 / var(--tw-bg-opacity));
 }
 
-.bg-slate-800 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(30 41 59 / var(--tw-bg-opacity));
-}
-
 .bg-yellow-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(253 224 71 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#3084b1\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(48 132 177 / var(--tw-bg-opacity));
-}
-
-.bg-\[\] {
-  background-color: ;
-}
-
-.bg-\[\#\] {
-  background-color: #;
-}
-
-.bg-\[\#040d12e1\] {
-  background-color: #040d12e1;
-}
-
-.bg-\[\#040d12\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(4 13 18 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#081b24\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(8 27 36 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#263237\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(38 50 55 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#1e2529\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(30 37 41 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#2c3337\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(44 51 55 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#2d3336\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(45 51 54 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#24292b\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(36 41 43 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#122229\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(18 34 41 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#353c3f\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(53 60 63 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#2c3235\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(44 50 53 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#1e2224\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(30 34 36 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#141718\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(20 23 24 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#202426\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(32 36 38 / var(--tw-bg-opacity));
 }
 
 .object-cover {
@@ -928,14 +823,6 @@ video {
 
 .p-2 {
   padding: 0.5rem;
-}
-
-.p-4 {
-  padding: 1rem;
-}
-
-.p-1 {
-  padding: 0.25rem;
 }
 
 .px-2 {
@@ -958,11 +845,6 @@ video {
   padding-bottom: 1rem;
 }
 
-.px-1 {
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
-}
-
 .pb-4 {
   padding-bottom: 1rem;
 }
@@ -971,16 +853,8 @@ video {
   text-align: center;
 }
 
-.font-\[Urbanist\] {
-  font-family: Urbanist;
-}
-
 .font-\[Outfit\] {
   font-family: Outfit;
-}
-
-.font-\[\] {
-  font-family: ;
 }
 
 .text-2xl {
@@ -1010,6 +884,11 @@ video {
   font-weight: 100;
 }
 
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
 .text-slate-300 {
   --tw-text-opacity: 1;
   color: rgb(203 213 225 / var(--tw-text-opacity));
@@ -1025,25 +904,6 @@ video {
   color: rgb(15 23 42 / var(--tw-text-opacity));
 }
 
-.text-yellow-200 {
-  --tw-text-opacity: 1;
-  color: rgb(254 240 138 / var(--tw-text-opacity));
-}
-
-.text-yellow-100 {
-  --tw-text-opacity: 1;
-  color: rgb(254 249 195 / var(--tw-text-opacity));
-}
-
-.text-black {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-
-.opacity-80 {
-  opacity: 0.8;
-}
-
 .transition-all {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1057,10 +917,6 @@ video {
 @media (min-width: 640px) {
   .sm\:static {
     position: static;
-  }
-
-  .sm\:sticky {
-    position: sticky;
   }
 
   .sm\:mb-6 {

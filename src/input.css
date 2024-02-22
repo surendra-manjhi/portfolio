@@ -4,7 +4,7 @@
 
 @layer components {
 	.active {
-		@apply underline;
+		@apply underline decoration-yellow-300;
 	}
 
 	.highlight {
